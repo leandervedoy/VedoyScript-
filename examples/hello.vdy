@@ -1,0 +1,3 @@
+Function Hello():
+    Let Name = "Vedoy".
+    Return Name.
