@@ -1,0 +1,6 @@
+Data.
+    Set Product to "Smart Plug".
+    Set Price to 299.
+Page "$Product".
+    Heading "$Product".
+    Text "From $Price NOK".

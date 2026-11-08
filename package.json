@@ -1,0 +1,23 @@
+{
+  "name": "vedoyscript-website",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Official VedoyScript language website and documentation",
+  "scripts": {
+    "start": "docusaurus start --host 127.0.0.1",
+    "build": "docusaurus build",
+    "serve": "docusaurus serve --host 127.0.0.1",
+    "check": "node scripts/validate-content.mjs && docusaurus build"
+  },
+  "dependencies": {
+    "@docusaurus/core": "^3.10.2",
+    "@docusaurus/preset-classic": "^3.10.2",
+    "clsx": "^2.1.1",
+    "prism-react-renderer": "^2.4.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}
