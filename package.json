@@ -7,7 +7,8 @@
     "start": "docusaurus start --host 127.0.0.1",
     "build": "docusaurus build",
     "serve": "docusaurus serve --host 127.0.0.1",
-    "check": "node scripts/validate-content.mjs && docusaurus build"
+    "check": "node scripts/validate-content.mjs && npm run test:content && docusaurus build",
+    "test:content": "node --test tests/site.test.mjs"
   },
   "dependencies": {
     "@docusaurus/core": "^3.10.2",

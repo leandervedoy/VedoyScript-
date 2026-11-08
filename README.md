@@ -6,7 +6,7 @@
 
 **Less syntax. More creation.**
 
-[Documentation](./docs/intro.md) · [Getting started](./docs/getting-started.md) · [Examples](./examples/) · [Performance](./docs/performance.md)
+[Documentation](./docs/intro.md) · [Getting started](./docs/getting-started.md) · [Examples](./examples/) · [API & JSON](./docs/api-json.md) · [Performance](./docs/performance.md)
 
 </div>
 
@@ -21,7 +21,7 @@ npm install
 npm run start
 ```
 
-`npm run check` validates the content and runs a production build. The website uses Docusaurus and includes a marketing homepage, examples, performance discussion and 16 documentation pages.
+`npm run check` validates the content and runs a production build. The website uses Docusaurus and includes a marketing homepage, examples, performance discussion and 26 documentation pages, a local search index, a syntax reference and five interactive lessons.
 
 ## Language example
 
@@ -32,6 +32,24 @@ Page "Hello".
     When Click "go".
         Show "Hello from VedoyScript!".
 ```
+
+## API and JSON (experimental)
+
+The experimental [API/JSON compiler adapter](https://github.com/leandervedoy/vedoy-dev-studio/pull/8) generates browser requests from concise VedoyScript:
+
+```text
+Data.
+    Object Order.
+        Set product to "smart-plug".
+        Set quantity to 2.
+Page "Store".
+    Button "Save".
+    When Click "Save".
+        Post "/api/orders" with "Order" as "saved".
+        Show JSON "saved".
+```
+
+This feature is not yet merged or deployed. It requires a protected server route under `/api/` and supports HTML output only. See [API guide](./docs/api-json.md).
 
 ## Status and ownership
 

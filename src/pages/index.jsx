@@ -12,6 +12,7 @@ const benefits=[
  {number:"03",title:"Stay connected",detail:"The separate Forge Polyglot experiment connects local Python and JavaScript modules."}
 ];
 const cases=[
+ {title:"API and JSON",tag:"EXPERIMENTAL",desc:"Short Get and Post commands for same-origin JSON APIs."},
  {title:"Landing pages",tag:"SUPPORTED BETA",desc:"Compose simple, responsive content pages."},
  {title:"Interactive prototypes",tag:"SUPPORTED BETA",desc:"Buttons, handlers and UI demonstrations."},
  {title:"Structured content",tag:"SUPPORTED BETA",desc:"Describe objects and lists without handwritten JSON."},
@@ -26,7 +27,7 @@ export default function Home(){
    <section className={styles.hero}><div className="container"><div className={styles.heroGrid}>
     <div><span className={styles.eyebrow}>INTRODUCING VEDOYSCRIPT · EXPERIMENTAL BETA</span>
     <h1>Make code<br/><em>feel simple.</em></h1><p>A readable programming language designed to remove unnecessary syntax. Start with clear instructions and build real interfaces.</p>
-    <div className={styles.actions}><Link className={styles.primary} to="/docs/getting-started">Get started ↗</Link><Link className={styles.secondary} to="/docs/intro">Explore documentation →</Link></div>
+    <div className={styles.actions}><Link className={styles.primary} to="/docs/getting-started">Get started ↗</Link><Link className={styles.secondary} to="/learn">Interactive lessons →</Link><Link className={styles.secondary} to="/docs/intro">Explore documentation →</Link></div>
     <small>Readable source · No raw JSON for basic data · Built to grow</small></div>
     <div className={styles.editor}><div className={styles.editorBar}><span>● ● ●</span><strong>hello-world.{tab}</strong></div>
      <div className={styles.tabs}><button className={tab==='vds'?styles.active:''} onClick={()=>setTab('vds')}>VedoyScript</button><button className={tab==='js'?styles.active:''} onClick={()=>setTab('js')}>JavaScript</button></div>
