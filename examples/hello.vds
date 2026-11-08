@@ -1,0 +1,5 @@
+Page "Hello".
+    Heading "Hello from VedoyScript".
+    Button "Try" as "go".
+    When Click "go".
+        Show "It works!".
