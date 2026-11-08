@@ -1,0 +1,8 @@
+[package]
+name = "vedoyscript"
+version = "0.1.0"
+edition = "2021"
+description = "Experimental Rust-powered VedoyScript compiler"
+license = "MIT"
+
+[dependencies]
